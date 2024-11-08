@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    margin-bottom: 30px;
+    width: 850px;
+    height: 40px;
+}
+
+.input {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: solid;
+    size: solid;
+    height: 60px;
+    width: 650px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 65px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(90, 133, 212);
+    color: white;
+}
+
+.button :hover {
+    color: yellow;
+}

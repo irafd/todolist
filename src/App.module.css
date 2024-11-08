@@ -1,0 +1,54 @@
+.wrapper {
+    background-color: white;
+    max-width: 1500px;
+    margin: 1px auto 0 auto;
+}
+
+.header {
+    text-align: center;
+    font-size: 90px;
+    color: rgb(90, 133, 212);
+
+    margin: 0;
+
+}
+
+.header:hover {
+    color: rgb(234, 255, 0);
+}
+
+.hr {
+    color: rgb(234, 255, 0);
+    font-weight: 700;
+}
+
+.alltodos {
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(90, 133, 212);
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.alltodos :hover {
+
+    color: rgb(228, 245, 46);
+    font-weight: 700;
+    transform: scale(1);
+}
+
+.btnclear {
+    margin: 1px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: rgb(90, 133, 212);
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+.btnclear :hover {
+    color: rgb(234, 255, 0);
+    transform: scale(1);
+}

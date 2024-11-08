@@ -1,0 +1,28 @@
+.footer {
+    color: red;
+
+    max-width: 1500px;
+    margin: 1px auto 0 auto;
+    cursor: pointer;
+
+}
+
+.date {
+
+    color: rgb(90, 133, 212);
+    display: grid;
+    justify-content: flex-end;
+    align-items: end;
+    font-size: 50px;
+    margin: 1px auto 0 auto;
+    cursor: pointer;
+
+}
+
+
+
+.red {
+    font-size: 50px;
+    color: blue;
+    cursor: pointer;
+}
