@@ -4,26 +4,26 @@
     margin-right: auto;
     margin-left: auto;
     color: white;
-    margin-bottom: 30px;
-    width: 850px;
-    height: 40px;
+    margin-bottom: 1.8rem;
+    width: 50rem;
+    height: 2.5rem;
 }
 
 .input {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-decoration: solid;
     size: solid;
-    height: 60px;
-    width: 650px;
+    height: 3.7rem;
+    width: 40rem;
 }
 
 .button {
     display: flex;
     justify-content: center;
     width: 20%;
-    height: 65px;
-    font-size: 40px;
+    height: 4rem;
+    font-size: 2.3rem;
     border: none;
     outline: none;
     background-color: rgb(90, 133, 212);
