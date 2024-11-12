@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@300,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,8 @@
     font-size: clamp(1rem, 5vw, 2.5rem);
     text-decoration: solid;
     size: solid;
+    margin-bottom: clamp(0.1rem, 10vw, 1.8rem);
+    border-radius: 5px;
     height: clamp(2rem, 8vw, 3.7rem);
     width: clamp(1rem, 50vw, 40rem);
 }
@@ -27,9 +31,11 @@
     display: flex;
     justify-content: center;
     width: clamp(2.3rem, 20vw, 8rem);
-    height: clamp(2.3rem, 8vw, 4rem);
+    height: clamp(2.3rem, 8.5vw, 3.8rem);
     font-size: clamp(1rem, 5vw, 2.3rem);
+    padding-top: 0.5rem;
     border: none;
+    border-radius: 10px;
     outline: none;
     background-color: rgb(90, 133, 212);
     color: white;

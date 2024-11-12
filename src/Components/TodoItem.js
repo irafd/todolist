@@ -2,8 +2,8 @@ import React from 'react'
 import styles from './TodoItem.module.css'
 import { CiCircleRemove } from "react-icons/ci";
 import { IoIosCreate } from "react-icons/io";
-import { FaLockOpen } from "react-icons/fa";
-import { IoLockClosed } from "react-icons/io5";
+import { MdLockClock } from "react-icons/md";
+import { TiLockClosed } from "react-icons/ti";
 import { v4 as uuidv4 } from 'uuid';
 
 function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
@@ -18,7 +18,7 @@ function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
               
             <button type="button" onClick={() => togleTask(todo.id)} className={styles.lock} title="Lock" key={uuidv4()} >
               {
-                todo.isCompleted ?  <IoLockClosed className={styles.lockClosed}/> : <FaLockOpen  />
+                todo.isCompleted ?  <TiLockClosed className={styles.lockClosed}/> : <MdLockClock />
               }
               
             </button>
