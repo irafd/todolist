@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/todolist/static/css/main.87a6c7c9.css",
+    "main.css": "/todolist/static/css/main.cb69dd2d.css",
     "main.js": "/todolist/static/js/main.dc90dc27.js",
     "static/js/206.41972aa7.chunk.js": "/todolist/static/js/206.41972aa7.chunk.js",
     "index.html": "/todolist/index.html"
   },
   "entrypoints": [
-    "static/css/main.87a6c7c9.css",
+    "static/css/main.cb69dd2d.css",
     "static/js/main.dc90dc27.js"
   ]
 }
