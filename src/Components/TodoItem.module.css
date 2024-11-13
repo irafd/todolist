@@ -7,18 +7,12 @@
 
 @media screen and (min-width:1390px) {
     .title {
-        margin-right: max(31%, 20rem);
+        margin-right: 19.5rem;
     }
 
     .time {
         right: min(6.5rem, 25vw);
 
-    }
-}
-
-@media screen and (max-width:1390px) {
-    .title {
-        margin-right: min(22%, 5.5rem);
     }
 }
 
@@ -31,6 +25,10 @@
 
     .time {
         right: clamp(0rem, 1vw, 0.2rem);
+    }
+
+    .title {
+        margin-right: 5.5rem;
     }
 }
 
@@ -50,7 +48,6 @@
 .title {
     text-align: left;
     margin-left: clamp(3.5rem, 9vw, 4rem);
-    margin-right: clamp(4.5rem, 45vw, 18.9rem);
     margin-top: 0rem;
     font-size: clamp(1rem, 5vw, 2.5rem);
     font-weight: 500;
@@ -90,6 +87,7 @@
     height: clamp(2.5rem, 8vw, 3rem);
     width: clamp(2.5rem, 8vw, 3rem);
     color: rgb(138, 42, 53);
+    background-color: white;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -112,6 +110,7 @@
     font-size: clamp(1.1rem, 4vw, 1.6rem);
     font-weight: 900;
     color: rgb(138, 42, 53);
+    background-color: white;
     cursor: pointer;
 }
 
