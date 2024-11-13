@@ -28,7 +28,7 @@
 
 .alltodos {
     font-size: clamp(1.5rem, 5vw, 3.3rem);
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(90, 133, 212);
     display: flex;
     justify-content: space-around;

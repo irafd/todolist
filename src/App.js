@@ -4,9 +4,6 @@ import styles from "./App.module.css"
 import TodoItem from './Components/TodoItem'
 import Edit from './Components/Edit'
 import Footer from './Components/Footer'
-import { v4 as uuidv4 } from 'uuid'
-
-
 
 function App() {
   const [todos, setTodos] = useState('')
@@ -23,6 +20,8 @@ useEffect(() => {
 useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
+
+
 
   const addTask = (userInput) => {
     if (userInput) {
@@ -70,8 +69,9 @@ const editTask = (task, id) => {
 
 useEffect(() => {
     setAllComplete(todos && todos.filter(todo => todo.isCompleted === true).length)
-  }, [todos])
-
+}, [todos])
+  
+  
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.header}>Daily To do list</h1>
@@ -94,15 +94,15 @@ useEffect(() => {
         )
       ))}
       <div className={styles.alltodos}>
-        <span>Total: {allTodos}</span>
+        <span>New tasks: {allTodos}</span>
         <span>Completed: {allComplete}</span>
       </div>
       
-      <button type="button" onClick={clearTodos} className={styles.btnclear} title="Clear task" key={uuidv4()}>Clear all</button>
-      <Footer/>
-      
+      <button onClick={clearTodos} className={styles.btnclear}>Clear all</button>
+    <Footer/>
       </div>
   )
 }
 
 export default App
+

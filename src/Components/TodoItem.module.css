@@ -5,33 +5,42 @@
     padding: 0;
 }
 
-@media screen and (max-width:1400px) {
-
-    .date,
-    .date :hover,
-    .time,
-    .time :hover {
-        display: none;
-    }
-}
-
-@media screen and (min-width:991px) {
+@media screen and (min-width:1390px) {
     .title {
         margin-right: max(31%, 20rem);
     }
+
+    .time {
+        right: min(6.5rem, 25vw);
+
+    }
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1390px) {
     .title {
         margin-right: min(22%, 5.5rem);
     }
 }
 
+@media screen and (max-width:1400px) {
+
+    .date,
+    .date :hover {
+        display: none;
+    }
+
+    .time {
+        right: clamp(0rem, 1vw, 0.2rem);
+    }
+}
+
+
+
 .wrapper {
     max-width: clamp(40rem, 100%, 70rem);
     margin: 0.05rem auto 0 auto;
     text-align: left;
-    word-break: break-all;
+    word-wrap: initial;
     overflow: auto;
     scrollbar-base-color: #03f8f4;
     scrollbar-track-color: #03f8f4;
@@ -41,31 +50,29 @@
 .title {
     text-align: left;
     margin-left: clamp(3.5rem, 9vw, 4rem);
+    margin-right: clamp(4.5rem, 45vw, 18.9rem);
     margin-top: 0rem;
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    font-weight: 400;
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-weight: 500;
     border-color: rgb(15, 22, 154);
 }
 
 .title:hover {
-
     opacity: 1;
-    font-weight: 600;
-
+    font-weight: 500;
 }
 
 .title:active {
     color: rgb(138, 42, 53);
     opacity: 1;
-    font-weight: 900;
-
+    font-weight: 700;
 }
 
 .container {
     position: relative;
     list-style: none;
     width: 95%;
-    height: clamp(1.5rem, 30vw, 5.5rem);
+    height: clamp(2.5rem, 35vw, 5.5rem);
     box-shadow:
         inset 0.1rem 0.1rem clamp(0.7rem, 4vw, 1rem) -0.1rem rgb(90, 133, 212);
     border-radius: 1rem;
@@ -76,8 +83,8 @@
 
 .lock {
     position: absolute;
-    font-size: clamp(2rem, 8vw, 2.5rem);
-    padding-top: 0.2rem;
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    padding-top: 0.001rem;
     top: clamp(1.5rem, 15vw, 1.5rem);
     left: clamp(0.5rem, 1vw, 0.5rem);
     height: clamp(2.5rem, 8vw, 3rem);
@@ -97,6 +104,17 @@
     color: gray;
 }
 
+.time {
+    position: absolute;
+    bottom: 0.5rem;
+    height: clamp(2rem, 40vw, 2rem);
+    width: clamp(4.1rem, 24vw, 7.2rem);
+    font-size: clamp(1.1rem, 4vw, 1.6rem);
+    font-weight: 900;
+    color: rgb(138, 42, 53);
+    cursor: pointer;
+}
+
 .date {
     position: absolute;
     top: clamp(0rem, 20vw, 0.3rem);
@@ -114,22 +132,9 @@
     font-weight: 900;
 }
 
-.time {
-    position: absolute;
-    top: 3rem;
-    right: clamp(5.5rem, 25vw, 6.5rem);
-    height: clamp(1rem, 36vw, 2rem);
-    width: clamp(5rem, 25vw, 7.2rem);
-    font-size: clamp(1.5rem, 4vw, 1.6rem);
-    font-weight: 900;
-    color: rgb(138, 42, 53);
-    cursor: pointer;
-}
-
-
 .edit {
     position: absolute;
-    top: 1.5rem;
+    top: clamp(0.1rem, 1vw, 3rem);
     right: clamp(2.5rem, 7vw, 3rem);
     width: clamp(2.5rem, 8vw, 3rem);
     height: clamp(2.5rem, 8vw, 3rem);
@@ -139,7 +144,7 @@
 
 .remove {
     position: absolute;
-    top: 1.7rem;
+    top: clamp(0.1rem, 1vw, 3rem);
     right: 0.2rem;
     height: clamp(2.5rem, 8vw, 3rem);
     width: clamp(2.5rem, 8vw, 3rem);
