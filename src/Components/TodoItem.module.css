@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-@media screen and (min-width:1390px) {
+@media screen and (min-width:768px) {
     .title {
         margin-right: 19.5rem;
     }
@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:767px) {
 
     .date,
     .date :hover {
@@ -25,8 +25,8 @@
 
     .time {
         right: clamp(0rem, 1vw, 0.2rem);
-        background-color: rgb(138, 42, 53);
         border: rgb(138, 42, 53);
+        font-weight: 900;
     }
 
     .title {
@@ -35,11 +35,11 @@
 
     .addtime {
         position: absolute;
-        margin-right: 0.4rem;
-        bottom: 0.5rem;
-        font-size: 1.5rem;
+        right: 0.5rem;
+        bottom: 2rem;
+        font-size: 1.3rem;
         font-weight: 700;
-        color: black;
+        color: rgb(90, 133, 212);
         cursor: pointer;
     }
 
@@ -116,8 +116,7 @@
 
 .time {
     position: absolute;
-
-    bottom: 0.5rem;
+    bottom: 0.3rem;
     height: clamp(2rem, 40vw, 2rem);
     width: clamp(4.1rem, 24vw, 7.2rem);
     font-size: clamp(1.1rem, 4vw, 1.6rem);
