@@ -24,6 +24,7 @@
     }
 
     .time {
+        background-color: rgb(135, 158, 202);
         right: clamp(0rem, 1vw, 0.2rem);
         border: rgb(138, 42, 53);
         font-weight: 900;
@@ -34,11 +35,12 @@
     }
 
     .addtime {
+
         position: absolute;
         right: 0.5rem;
         bottom: 2rem;
         font-size: 1.3rem;
-        font-weight: 700;
+        font-weight: 900;
         color: rgb(90, 133, 212);
         cursor: pointer;
     }
