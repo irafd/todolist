@@ -13,7 +13,8 @@ function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
       <div className={styles.container} >
         <div className={styles.title} >
           <div>
-            <input placeholder='time'  type='time' className={styles.time} key={uuidv4()}   ></input>
+            <label htmlFor="hjft" className={styles.addtime}>Add time: </label>
+            <input placeholder='time'  type='time' id="ghjft" className={styles.time}   ></input>
             <input placeholder='date' type='date' className={styles.date} key={uuidv4()} ></input>
               
             <button type="button" onClick={() => togleTask(todo.id)} className={styles.lock} title="Lock" key={uuidv4()} >

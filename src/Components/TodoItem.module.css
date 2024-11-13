@@ -25,13 +25,25 @@
 
     .time {
         right: clamp(0rem, 1vw, 0.2rem);
+        background-color: rgb(138, 42, 53);
+        border: rgb(138, 42, 53);
     }
 
     .title {
         margin-right: 5.5rem;
     }
-}
 
+    .addtime {
+        position: absolute;
+        margin-right: 0.4rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: black;
+        cursor: pointer;
+    }
+
+}
 
 
 .wrapper {
@@ -104,15 +116,17 @@
 
 .time {
     position: absolute;
+
     bottom: 0.5rem;
     height: clamp(2rem, 40vw, 2rem);
     width: clamp(4.1rem, 24vw, 7.2rem);
     font-size: clamp(1.1rem, 4vw, 1.6rem);
     font-weight: 900;
     color: rgb(138, 42, 53);
-    background-color: white;
     cursor: pointer;
 }
+
+
 
 .date {
     position: absolute;
