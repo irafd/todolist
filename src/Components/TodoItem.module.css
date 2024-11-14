@@ -36,7 +36,7 @@
     }
 
     .time {
-        background-color: rgb(197, 105, 116);
+        background-color: white;
         box-shadow: inset 0.1rem 0.1rem 0.7rem -0.1rem rgb(90, 133, 212);
         right: clamp(0rem, 1vw, 0.2rem);
         border: rgb(138, 42, 53);
@@ -46,7 +46,7 @@
 
     .addtime {
         position: absolute;
-        right: 0.5rem;
+        right: 0.1rem;
         bottom: 2.2rem;
         font-size: 1.3rem;
         font-weight: 900;
@@ -54,6 +54,14 @@
         cursor: pointer;
     }
 
+    .clockdown {
+        position: absolute;
+        right: 5.1rem;
+        bottom: 0.15rem;
+        font-weight: 900;
+        color: rgb(71, 107, 173);
+        cursor: pointer;
+    }
 }
 
 
