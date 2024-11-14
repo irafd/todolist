@@ -113,11 +113,11 @@
 .lock {
     border: none;
     position: absolute;
-    font-size: clamp(2rem, 10vw, 2.8rem);
-    height: clamp(1.8rem, 5vw, 3rem);
-    width: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2.8rem, 10vw, 2.8rem);
+    height: clamp(3rem, 10vw, 3rem);
+    width: clamp(3rem, 10vw, 3rem);
     top: clamp(1.5rem, 15vw, 1.5rem);
-    left: clamp(0.5rem, 0.4vw, 0.5rem);
+    left: clamp(0.2rem, 0.4vw, 0.5rem);
     color: rgb(138, 42, 53);
     background-color: white;
     cursor: pointer;
