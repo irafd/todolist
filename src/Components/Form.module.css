@@ -5,6 +5,18 @@
     padding: 0;
 }
 
+@media screen and (min-width:768px) {
+    .button {
+        width: min(8rem, 40vw);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .button {
+        width: max(6rem, 40vw);
+    }
+}
+
 .form {
     display: flex;
     background-color: white;
@@ -30,7 +42,6 @@
 .button {
     display: flex;
     justify-content: center;
-    width: clamp(8rem, 40vw, 8rem);
     height: clamp(2.3rem, 8.5vw, 3.8rem);
     font-size: clamp(1rem, 5vw, 2.3rem);
     padding-top: 0.5rem;
