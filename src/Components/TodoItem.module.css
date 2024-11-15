@@ -53,16 +53,6 @@
         color: rgb(90, 133, 212);
         cursor: pointer;
     }
-
-    .clockdown {
-        border: rgb(71, 107, 173);
-        position: absolute;
-        right: 5.25rem;
-        bottom: 0.14rem;
-        font-weight: 900;
-        color: rgb(71, 107, 173);
-        cursor: pointer;
-    }
 }
 
 

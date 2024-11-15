@@ -5,7 +5,7 @@ import { IoIosCreate } from "react-icons/io";
 import { BiCheckbox } from "react-icons/bi";
 import { BiCheckboxChecked } from "react-icons/bi";
 import { v4 as uuidv4 } from 'uuid';
-import { TbClockDown } from "react-icons/tb";
+
 
 function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
 
@@ -14,7 +14,7 @@ function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
       <div className={styles.container} >
         <div className={styles.title} >
           <div>
-            <label htmlFor="hjft" className={styles.addtime}>Add time <TbClockDown className={styles.clockdown} /> </label>
+            <label htmlFor="hjft" className={styles.addtime}>Add time  </label>
             <input placeholder='time'  type='time' id="ghjft" className={styles.time}   ></input>
             <input placeholder='date' type='date' className={styles.date} key={uuidv4()} ></input>
               
