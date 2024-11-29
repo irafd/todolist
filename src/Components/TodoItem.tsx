@@ -6,8 +6,21 @@ import { BiCheckbox } from "react-icons/bi";
 import { BiCheckboxChecked } from "react-icons/bi";
 import { v4 as uuidv4 } from 'uuid';
 
+interface TodoItemProps  {
+  todo: Todo;
+  removeTask: (id:number) => void;
+  toggleTask: (id:number) => void;
+  editTodo: (id:number) => void;
+}
+interface Todo {
+  id: number;
+  task: string;
+  completed: boolean;
+  isCompleted: boolean;
+}
 
-function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
+
+const TodoItem: React.FC<TodoItemProps> = ({ todo, removeTask, toggleTask,  editTodo  }) => {
 
   return (
     <div className={styles.wrapper} >
@@ -18,7 +31,7 @@ function TodoItem({ todo, removeTask, togleTask,  editTodo  }) {
             <input placeholder='time'  type='time' id="ghjft" className={styles.time}   ></input>
             <input placeholder='date' type='date' className={styles.date} key={uuidv4()} ></input>
               
-            <button type="button" onClick={() => togleTask(todo.id)} className={styles.lock} title="Lock" key={uuidv4()} >
+            <button type="button" onClick={() => toggleTask(todo.id)} className={styles.lock} title="Lock" key={uuidv4()} >
               {
                 todo.isCompleted ?  <BiCheckboxChecked className={styles.lockClosed}/> : <BiCheckbox />
               }
